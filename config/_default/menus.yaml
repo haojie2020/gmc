@@ -14,7 +14,7 @@ main:
     url: people
     weight: 30
   - name: Open Position
-    url: event
+    url: position
     weight: 40
   - name: Publications
     url: publication
