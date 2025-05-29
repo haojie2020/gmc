@@ -1,25 +1,30 @@
 ---
 # Display name
-title: Alice Wu 吳恩達
+title: Dr. Haojie Zhang
 
 # Full name (for SEO)
-first_name: Alice
-last_name: Wu
+first_name: Haojie
+last_name: Zhang
 
 # Username (this should match the folder name)
 authors:
-  - 吳恩達
+  - Haojie
 
 # Is this the primary user of the site?
-superuser: false
+superuser: ture
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Group Leader
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
-    url: ''
+  - name: JTC-MLU
+    url: 'https://jtc.uni-halle.de/'
+  - name: MPI
+    url: 
+
+# Office location
+  - office: Room 2.05, Weinbergweg 23, 06120 Halle (Saale), Germany
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -48,16 +53,16 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
+    link: 'mailto:haojie.zhang@physik.uni-hall.de'
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/GeorgeCushen
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://scholar.google.com/citations?user=9mcKyhoAAAAJ&hl=zh-CN
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-0165-7472
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -70,9 +75,8 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Alumni
+  - Principal Investigator
+  
 ---
 
-吳恩達 is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Haojie.....
