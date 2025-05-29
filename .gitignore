@@ -1,7 +1,18 @@
-# IDEs
-.idea/
-
-# Hugo
-/resources/
+# Hugo build output & cache
 public/
+resources/
+hugo_stats.json
+
+# Node.js
+node_modules/
+
+# IDE/editor settings
+.idea/
+.vscode/
 assets/jsconfig.json
+
+# System files
+.DS_Store
+*.swp
+*.swo
+*.local
