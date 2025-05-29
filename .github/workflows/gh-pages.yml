@@ -8,22 +8,29 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
+      # 1. 拉取仓库
       - name: Checkout source
         uses: actions/checkout@v4
 
+      # 2. 安装 Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
 
+      # 3. 构建站点
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
+      # 4. 部署到 gh-pages 分支
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 发布目录
           publish_dir: ./public
+          # 默认就推到 gh-pages
+          publish_branch: gh-pages
+          # GitHub 自动提供的 TOKEN
+          github_token: ${{ secrets.GITHUB_TOKEN }}
