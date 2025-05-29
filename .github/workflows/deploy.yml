@@ -3,22 +3,21 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - main
+      - main  # 当你推送 main 分支时触发
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.124.1'
-          extended: true
+          hugo-version: '0.124.1'  # 你的 Hugo 版本
 
-      - name: Build
+      - name: Build site
         run: hugo --minify
 
       - name: Deploy to GitHub Pages
@@ -26,4 +25,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          cname: haojiegroup.com
