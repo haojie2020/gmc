@@ -9,7 +9,7 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the **GMC**
+      - title: 👋 Welcome to **GMC**
         content: Advancing Carbon Neutrality and Green Hydrogen via Field-Enhanced Electrolysis.
         align: center
         background:
