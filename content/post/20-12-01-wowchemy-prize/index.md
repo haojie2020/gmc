@@ -1,6 +1,7 @@
 ---
 title: Richard Hendricks Wins First Place in the Wowchemy Prize
 date: 2020-12-01
+tags: ["Prize"]  # 可用于关键词过滤
 ---
 
 Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.
