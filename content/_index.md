@@ -22,7 +22,7 @@ sections:
         link:
           icon: 
           icon_pack: fas
-          text: Take a look at what we're working on...
+          text: Check our research...
           url: ../tour/
 
       - title: Lunch & Learn ☕️
