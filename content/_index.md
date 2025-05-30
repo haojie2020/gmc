@@ -9,7 +9,7 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the Green Molecules Conversion Group (GMC)
+      - title: 👋 Welcome to the **GMC**
         content: Advancing Carbon Neutrality and Green Hydrogen via Field-Enhanced Electrolysis.
         align: center
         background:
