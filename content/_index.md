@@ -38,7 +38,7 @@ sections:
         link:
           icon: enjoy
           icon_pack: fas
-          text: lastest News
+          text: latest News
           url: ../post/
 
       - title:  Field-enhanced (photo)electrocatalysis Lab
