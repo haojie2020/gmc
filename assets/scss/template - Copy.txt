@@ -1,0 +1,41 @@
+// Make page header alignment consistent with widget page header alignment
+.universal-wrapper h1 {
+  text-align: center;
+}
+
+// Center the CTA shortcode button
+.cta-group {
+  justify-content: center;
+}
+
+/* 幻灯片主标题：自适应字体 */
+.hero-title {
+  font-size: clamp(1.5rem, 3.5vw, 3.0rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: '';
+}
+
+/* 幻灯片副标题：自适应字体 */
+.hero-lead {
+  font-size: clamp(1.0rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  color: '';
+}
+
+
+/* ================================
+   幻灯片图片缩放，不裁剪
+   ================================ */
+.carousel-item img {
+  max-width: 100%;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}

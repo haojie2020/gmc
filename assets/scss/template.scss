@@ -1,28 +1,95 @@
-// Make page header alignment consistent with widget page header alignment
-.universal-wrapper h1 {
-  text-align: center;
+/* ================================
+   幻灯片核心修复 - 支持16:10比例
+   ================================ */
+section:has(.carousel) {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  
+  .carousel {
+    height: 100% !important;
+  }
+  
+  .carousel-inner {
+    height: 100% !important;
+  }
+  
+  .carousel-item {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    
+    .container {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    max-width: 90%;
+    z-index: 10;
+  }
 }
 
-// Center the CTA shortcode button
-.cta-group {
-  justify-content: center;
+/* 响应式设计 - 智能适应各种比例 */
+@media (min-aspect-ratio: 1/1) {
+  /* 所有横屏比例：16:9, 16:10, 4:3 等 */
+  section:has(.carousel) {
+    height: 100vh !important;
+    
+    .carousel-item .container {
+      /* 关键优化：根据比例自动调整 */
+      background-size: contain;
+      background-position: center center;
+      background-color: inherit;
+      
+      /* 16:10专用优化 */
+      @media (min-aspect-ratio: 16/10) and (max-aspect-ratio: 16/9.9) {
+        background-position: center 60%; /* 下移焦点位置 */
+      }
+    }
+  }
 }
 
-/* 幻灯片主标题：自适应字体 */
-.hero-title {
-  font-size: clamp(1.5rem, 3.5vw, 3.0rem);
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-  color: '';
+@media (max-aspect-ratio: 1/1) {
+  /* 所有竖屏比例 */
+  section:has(.carousel) {
+    height: 60vh !important;
+    max-height: 600px;
+    
+    .carousel-item .container {
+      background-size: cover;
+    }
+  }
 }
 
-/* 幻灯片副标题：自适应字体 */
-.hero-lead {
-  font-size: clamp(1.0rem, 2.5vw, 1.5rem);
-  font-weight: 400;
-  line-height: 1.4;
-  text-align: center;
-  color: '';
+/* 特殊比例优化 */
+@media (min-aspect-ratio: 16/9) {
+  /* 超宽屏优化 */
+  section:has(.carousel) .carousel-caption {
+    max-width: 50%;
+  }
 }
 
+@media (max-aspect-ratio: 3/4) {
+  /* 超窄屏优化 */
+  section:has(.carousel) {
+    height: 70vh !important;
+  }
+}
