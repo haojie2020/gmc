@@ -1,5 +1,7 @@
 ---
+# Leave the homepage title empty to use the site title
 title: 
+
 date: 2022-10-24
 type: landing
 
@@ -15,8 +17,8 @@ sections:
             filename: groupimage.jpg
             filters:
               brightness: 0.8
-          position: center
-          size: auto  # 确保使用contain
+          position: right
+          size: contain
           color: '#666'
         link:
           icon: 
@@ -33,7 +35,7 @@ sections:
             filters:
               brightness: 0.8
           position: center
-          size: auto  # 确保使用contain
+          size: contain
           color: '#555'
         link:
           icon: enjoy
@@ -41,7 +43,7 @@ sections:
           text: latest News
           url: ../post/
 
-      - title: Field-enhanced (photo)electrocatalysis Lab
+      - title:  Field-enhanced (photo)electrocatalysis Lab
         content: ''
         align: right
         background:
@@ -50,7 +52,7 @@ sections:
             filters:
               brightness: 0.8
           position: center
-          size: auto  # 确保使用contain
+          size: contain
           color: '#333'
         link:
           icon: graduation-cap
@@ -58,9 +60,12 @@ sections:
           text: Join Us
           url: ../contact/
     design:
-      slide_height: ''  # 设置一个初始高度
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_height: ''
       is_fullscreen: ture
+      # Automatically transition through slides?
       loop: true
+      # Duration of transition between slides (in ms)
       interval: 5000
 
   - block: hero
@@ -93,6 +98,8 @@ sections:
       view: card
       columns: '1'
   
+
+
   - block: collection
     content:
       title: Latest publications
