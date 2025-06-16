@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Dr. Haojie Zhang
+title: Dr.
 
 # Full name (for SEO)
 first_name: Haojie
@@ -22,17 +22,24 @@ organizations:
     url: 'https://jtc.uni-halle.de/'
   - name: MPI
     url: 
+  - name: Centre for Innovation Competence SiLi-nano®
+    url: 
+  - name: Institue of Chemistry, MLU
+    url: 
 
 # Office location
-  - office: Room 2.05, Weinbergweg 23, 06120 Halle (Saale), Germany
+  - office: E0.70, Karl-Freiherr-von-Fritsch-Straße 3, 06120 Halle (Saale), Germany
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: We develop renewable energy-driven catalytic systems to convert water and waste gases (e.g., CO₂) into clean fuels, addressing global warming and energy sustainability. Our innovations achieve industry-leading green molecules conversion activity and selectivity with novel photo/electrocatalysts. By making green fuels cheaper than fossils, we empower a carbon-neutral future.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Atomic layer deposition
+  - Photo/electrochemisty
+  - Spin catalyst
+  - CO2 reduction
+  - Green hydrogen
+  - Electrolysis cell design
 
 education:
   courses:
@@ -56,7 +63,7 @@ social:
     link: 'mailto:haojie.zhang@physik.uni-hall.de'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: 
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=9mcKyhoAAAAJ&hl=zh-CN
@@ -79,4 +86,5 @@ user_groups:
   
 ---
 
-Haojie.....
+Our research addresses climate change mitigation and reducing fossil fuel-related health risks through renewable energy-driven photo/electrocatalysis. These systems enable dual-purpose conversion: producing green hydrogen while transforming greenhouse gases into valuable chemicals. Although externally applied fields (magnetic, electric, strain) enhance catalytic efficiency via charge transfer optimization and adsorption energy tuning, the atomic-scale mechanisms governing field-coupled reactions remain unclear.
+We focus on designing field-responsive catalysts by engineering active sites via electron spin control and ferroelectric domain modulation. Combining operando techniques (XAS, Raman, TEM) with multiscale simulations, we decode how fields regulate reaction barriers and intermediate adsorption/desorption at electronic/atomic scales. A breakthrough innovation involves scaling electrolyzers from lab prototypes to industrial flow cells sustaining working current densities >1 A/cm² while maintaining selectivity. By establishing dynamic structure-activity relationships under operational conditions, we bridge fundamental mechanisms with reactor engineering challenges.

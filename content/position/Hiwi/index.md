@@ -4,7 +4,7 @@
 # Schedule page publish date (NOT talk date).
 publishDate: '2017-01-01T00:00:00Z'
 
-title: HiWi position
+title: Hiwi Student Assistant Positions Available
 
 #event: Wowchemy Conference
 #event_url: https://example.org
@@ -56,10 +56,27 @@ slides:
 projects:
 ---
 
-Slides can be added in a few ways:
 
-- **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
 
-Further event details, including page elements such as image galleries, can be added to the body of this page.
+Our lab is currently offering Hiwi (student assistant) positions. If you are interested in gaining hands-on research experience and becoming part of an interdisciplinary and dynamic team, we encourage you to get in touch with us!
+
+
+**Requirements**:
+
+   1, Enrolled student at a university (Bachelor’s or Master’s level) in chemistry and physic areas. 
+
+   2, Motivated, reliable, and able to work independently
+
+   3, Interest in renewable energy or spintronic area.
+
+**What we offer**:
+
+   1, Flexible working hours
+
+   2, Practical experience in cutting-edge research
+
+   3, Supportive and international work environment
+
+If you are interested or would like more information, please contact us at: haojie.zhang@physik.uni-halle.de
+
+We look forward to hearing from you!

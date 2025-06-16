@@ -10,8 +10,8 @@ sections:
       title: Contact
       text: |-
         Please contact us through the below form.
-      email: gmc@haojiegroup.com
-      phone: 888 888 88 88
+      email: haojie.zhang@physik.uni-halle.de
+      phone: +49 345 5528 561
       address:
         street: Karl-Freiherr-von-Fritsch-Straße 3
         city: Halle (Saale)
@@ -42,7 +42,7 @@ sections:
           id:
         netlify:
           # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+          captcha: ture
     design:
       columns: '1'
 
