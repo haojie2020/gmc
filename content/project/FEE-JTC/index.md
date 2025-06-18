@@ -6,12 +6,12 @@ end_date: 2027-12-31
 tags: [ongoing]
 #status: "ongoing"
 image:
-   filename: field-her.jpg # cover image
+   filename: JTC.jpg # cover image
    focal_point: center
    preview_only: false
 
 images:
-  - filename: results.jpg # for result introduction
+  - filename: researchoutline.jpg # for result introduction
   - filename: team.jpg # team image
     
     
@@ -21,8 +21,9 @@ Our research addresses climate change mitigation and reducing fossil fuel-relate
 
 
 
+{{< figure src="researchoutline.jpg" caption="Research Outline" >}}
 
-{{< figure src="team.jpg" caption="Group image/2025" >}}
 
 We focus on designing field-responsive catalysts by engineering active sites via electron spin control and ferroelectric domain modulation. Combining operando techniques (XAS, Raman, TEM) with multiscale simulations, we decode how fields regulate reaction barriers and intermediate adsorption/desorption at electronic/atomic scales. A breakthrough innovation involves scaling electrolyzers from lab prototypes to industrial flow cells sustaining working current densities >1 A/cm² while maintaining selectivity. By establishing dynamic structure-activity relationships under operational conditions, we bridge fundamental mechanisms with reactor engineering challenges.
 
+{{< figure src="team.jpg" caption="Group image/2025" >}}
