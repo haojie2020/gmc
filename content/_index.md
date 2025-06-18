@@ -48,7 +48,7 @@ sections:
         align: right
         background:
           image:
-            filename: groupimage-2025.jpg
+            filename: welcome.jpg
             filters:
               brightness: 0.8
           position: center

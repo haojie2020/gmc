@@ -16,7 +16,7 @@ sections:
         Our group is dedicated to advancing electrocatalysis and energy conversion by leveraging external field effects-such as electric and magnetic fields-to boost electrochemical reactions. We focus on developing efficient solutions for green hydrogen production and CO₂ reduction, aiming to contribute to carbon neutrality through innovative field-enhanced catalytic strategies.
 
       image:
-        filename: groupimage-2025.jpg
+        filename: welcome.jpg
         
   - block: markdown
     content:
