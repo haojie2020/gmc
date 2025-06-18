@@ -48,7 +48,7 @@ sections:
         align: right
         background:
           image:
-            filename: welcome.jpg
+            filename: groupimage-2025.jpg
             filters:
               brightness: 0.8
           position: center
@@ -77,7 +77,7 @@ sections:
       text: |
         <br>
         
-        The **Green Molecules Conversion Group (GMC)** is a excellence group for field-enhanced (photo)electrochemistry research, teaching, and practice since its founding in 2024.
+        Our group is dedicated to advancing electrocatalysis and energy conversion by leveraging external field effects-such as electric and magnetic fields-to boost electrochemical reactions. We focus on developing efficient solutions for green hydrogen production and CO₂ reduction, aiming to contribute to carbon neutrality through innovative field-enhanced catalytic strategies.
   
   - block: collection
     content:
@@ -108,7 +108,7 @@ sections:
       filters:
         folders:
           - publication
-        publication_type: 'article'
+        publication_type: 'article-journal'
     design:
       view: citation
       columns: '1'

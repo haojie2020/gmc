@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <main id="main">
+    <section class="section pt-0">
+      <div class="container">
+        <h1>{{ .Title }}</h1>
+        <ul style="list-style: none; padding: 0;">
+          {{ $total := len .Pages }}
+          {{ range $index, $page := .Pages.ByDate.Reverse }}
+            <li style="margin-bottom: 2em; border-bottom: 1px solid #eee; padding-bottom: 1em;">
+              <b style="font-size:1.1em; color:#0057b8;">No. {{ sub $total $index }}</b>
+              <div>
+                <a href="{{ $page.RelPermalink }}" style="font-weight: bold; font-size: 1.1em;">{{ $page.Title }}</a>
+              </div>
+              {{ with $page.Params.authors }}
+                <div style="color: #555; margin-top:0.5em;">{{ delimit . ", " }}</div>
+              {{ end }}
+              {{ with $page.Params.publication }}
+                <div style="color: #999;">{{ . }}</div>
+              {{ end }}
+              {{ with $page.Date }}
+                <div style="color: #bbb;">Published: {{ .Format "2006-01-02" }}</div>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+  </main>
+{{ end }}

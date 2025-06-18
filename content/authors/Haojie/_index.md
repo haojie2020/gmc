@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Dr.
+title: Dr. Haojie Zhang
 
 # Full name (for SEO)
 first_name: Haojie

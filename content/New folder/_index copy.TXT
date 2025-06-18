@@ -1,0 +1,47 @@
+#---
+#title: Projects
+#subtitle: Our group research projects
+#layout: section
+#view: compact
+
+#filter: true
+#filter_button: true
+
+#banner:
+#  caption: ""
+#  image: ""
+#---
+---
+title: Projects
+subtitle: Our group research projects
+layout: section
+
+sections:
+  - block: collection
+    content:
+      title: "Ongoing Projects"
+      subtitle: ""
+      count: 100
+      filters:
+        folders:
+          - project
+        tags: ongoing
+      order: desc
+    design:
+      view: compact
+      columns: 1
+
+  - block: collection
+    content:
+      title: "Completed Projects"
+      subtitle: ""
+      count: 100
+      filters:
+        folders:
+          - project
+        tags: past
+      order: desc
+    design:
+      view: compact
+      columns: 1
+---

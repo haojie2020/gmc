@@ -1,0 +1,12 @@
+{{/* 自定义区块模板 */}}
+<section class="{{ if .block.design.css_class }}{{ .block.design.css_class }}{{ end }}">
+  <div class="container">
+    {{ with .block.content.title }}
+      <h2>{{ . | markdownify }}</h2>
+    {{ end }}
+    {{ with .block.content.subtitle }}
+      <p>{{ . | markdownify }}</p>
+    {{ end }}
+    {{ .block.content.text | safeHTML }}
+  </div>
+</section>

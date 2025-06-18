@@ -1,0 +1,4 @@
+{{/* 原始 HTML 区块模板 */}}
+<section class="{{ if .block.design.css_class }}{{ .block.design.css_class }}{{ end }}">
+  {{ .block.content.text | safeHTML }}
+</section>

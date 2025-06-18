@@ -1,0 +1,28 @@
+<!-- 欢迎页 -->
+<div class="swiper-slide">
+  <h2>👋 Welcome to GMC</h2>
+  <p>Advancing Carbon Neutrality and Green Hydrogen via Field-Enhanced Electrolysis.</p>
+  <a href="/tour/">Check our research...</a>
+</div>
+
+<!-- 最新 publication -->
+{{ $pub := first 1 (where site.RegularPages "Section" "publication") }}
+{{ range $pub }}
+<div class="swiper-slide">
+  <h2>📝 Latest Publication</h2>
+  <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+  <p style="margin-top:0.6em;">{{ .Summary }}</p>
+  <p><a href="{{ .RelPermalink }}">Read more →</a></p>
+</div>
+{{ end }}
+
+<!-- 最新 news -->
+{{ $news := first 1 (where site.RegularPages "Section" "post") }}
+{{ range $news }}
+<div class="swiper-slide">
+  <h2>📰 Latest News</h2>
+  <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+  <p style="margin-top:0.6em;">{{ .Summary }}</p>
+  <p><a href="{{ .RelPermalink }}">Read more →</a></p>
+</div>
+{{ end }}

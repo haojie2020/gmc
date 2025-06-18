@@ -1,0 +1,42 @@
+<div class="project-card">
+  {{ $cover := .Resources.GetMatch .Params.image.filename }}
+  {{ if not $cover }}
+    {{ $cover = resources.Get (printf "images/projects/%s" .Params.image.filename) }}
+  {{ end }}
+  
+  <div class="project-card-image">
+    {{ if $cover }}
+      <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }} Cover">
+    {{ else }}
+      <div class="no-image-placeholder">
+        <i class="fas fa-image"></i>
+      </div>
+    {{ end }}
+  </div>
+  
+  <div class="project-card-content">
+    <h3 class="project-card-title">{{ .Title }}</h3>
+    
+    <div class="project-card-meta">
+      <span class="project-period">
+        {{ dateFormat "2006" .Date }}–{{ dateFormat "2006" .Params.end_date }}
+      </span>
+      
+      <span class="project-tags">
+        {{ range .Params.tags }}
+          <span class="tag">{{ . }}</span>
+        {{ end }}
+      </span>
+    </div>
+    
+    <div class="project-card-summary">
+      {{ .Params.summary | markdownify }}
+    </div>
+    
+    <a href="{{ .RelPermalink }}" class="project-card-link">
+      View details <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
+<div class="project-card" style="width: 100vw !important; max-width: none !important;"></div>

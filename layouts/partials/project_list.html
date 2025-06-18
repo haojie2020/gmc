@@ -1,0 +1,202 @@
+{{ $ongoing := where (where site.RegularPages "Type" "project") ".Params.tags" "intersect" (slice "ongoing") }}
+{{ $past := where (where site.RegularPages "Type" "project") ".Params.tags" "intersect" (slice "past") }}
+
+<div class="projects-section">
+
+  <h2 class="section-title">
+    <i class="fas fa-tasks mr-2"></i> Ongoing Projects
+  </h2>
+  {{ if $ongoing }}
+    <div class="projects-container">
+      {{ range $ongoing }}
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title ongoing-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h3>
+            </div>
+            <p class="project-summary">{{ .Summary }}</p>
+            <div class="project-meta-line">
+              <span class="project-date">
+                <i class="far fa-calendar-alt mr-1"></i>
+                {{ .Date.Format "2006" }}{{ if .Params.end_date }} - {{ time.Format "2006" .Params.end_date }}{{ end }}
+              </span>
+              <span class="status-badge ongoing">Ongoing</span>
+            </div>
+            <a href="{{ .RelPermalink }}" class="project-link">
+              View details <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+          <div class="project-image">
+            {{ $cover := .Resources.GetMatch .Params.image.filename }}
+            {{ if $cover }}
+              <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }} cover image">
+            {{ else if .Params.image.filename }}
+              <img src="{{ .Params.image.filename | relURL }}" alt="{{ .Title }} cover image">
+            {{ else }}
+              <div class="placeholder-image">
+                <i class="fas fa-image fa-2x"></i>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="no-projects text-center py-4">
+      <i class="fas fa-inbox fa-2x mb-2"></i>
+      <p>No ongoing projects at the moment. Check back soon!</p>
+    </div>
+  {{ end }}
+
+  <h2 class="section-title mt-5">
+    <i class="fas fa-check-circle mr-2"></i> Completed Projects
+  </h2>
+  {{ if $past }}
+    <div class="projects-container">
+      {{ range $past }}
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title past-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h3>
+            </div>
+            <p class="project-summary">{{ .Summary }}</p>
+            <div class="project-meta-line">
+              <span class="project-date">
+                <i class="far fa-calendar-alt mr-1"></i>
+                {{ .Date.Format "2006" }}{{ if .Params.end_date }} - {{ time.Format "2006" .Params.end_date }}{{ end }}
+              </span>
+              <span class="status-badge past">Completed</span>
+            </div>
+            <a href="{{ .RelPermalink }}" class="project-link">
+              View details <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+          <div class="project-image">
+            {{ $cover := .Resources.GetMatch .Params.image.filename }}
+            {{ if $cover }}
+              <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }} cover image">
+            {{ else if .Params.image.filename }}
+              <img src="{{ .Params.image.filename | relURL }}" alt="{{ .Title }} cover image">
+            {{ else }}
+              <div class="placeholder-image">
+                <i class="fas fa-image fa-2x"></i>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="no-projects text-center py-4">
+      <i class="fas fa-inbox fa-2x mb-2"></i>
+      <p>No completed projects to display yet.</p>
+    </div>
+  {{ end }}
+</div>
+
+<style>
+.projects-section {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2em;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 16px #e4e8f3;
+  padding: 2.2em 2em;
+}
+.project-content {
+  flex: 1;
+  min-width: 0;
+}
+.project-image img {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #ccc;
+  /* 不限制宽度，让图片原始显示 */
+  max-width: none;
+  width: auto;
+  height: auto;
+  display: block;
+}
+.project-header { margin-bottom: 0.1em;}
+.project-title { font-size: 1.7em; margin: 0;}
+/* 分组颜色 */
+.project-title.ongoing-title a {
+  color: #2995fa !important;
+}
+.project-title.past-title a {
+  color: #212A32 !important;
+}
+.project-summary { margin-top: 0.8em; margin-bottom: 0.8em; color: #000000; font-size: 1.08em;}
+.project-meta-line {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.2em;
+  margin-top: 0.3em;
+}
+.project-date {
+  background: #eef2f6;
+  color: #264057;
+  padding: 0.45em 1.2em 0.45em 1.1em;
+  border-radius: 22px;
+  font-size: 1.08em;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.status-badge {
+  padding: 0.35em 1.2em 0.35em 1.2em;
+  border-radius: 20px;
+  font-size: 1.08em;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 0.25em;
+  vertical-align: middle;
+}
+.status-badge.ongoing {
+  background: #2995fa;
+  color: #fff;
+}
+.status-badge.past {
+  background: #e7e7e7;
+  color: #464646;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 1em;
+  font-weight: 600;
+  color: #258bf2;
+  text-decoration: none;
+  font-size: 1.08em;
+  transition: color .18s;
+}
+.project-link:hover { color: #005dc8;}
+@media (max-width: 800px) {
+  .project-card { flex-direction: column; }
+  .project-image img { width: 100%; }
+}
+
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 240px;
+  /* 让图片右侧留白，调节数字随心所欲！ */
+  padding-right: 32px;
+}
+</style>
