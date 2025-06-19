@@ -1,9 +1,6 @@
 /* ================================
-   项目列表样式增强 - 针对27英寸显示器优化
+   项目列表样式增强 - 针对27英寸显示器优化+响应式移动端优化
    ================================ */
-
-/* 移除顶部调试样式 */
-/* body .projects-section .project-card 和 .full-width-container 已不再需要 */
 
 /* 研究部分样式 */
 .research-section {
@@ -18,7 +15,7 @@
 /* 项目部分样式 */
 .projects-section {
   margin: 3rem 0;
-  
+
   .section-title {
     border-bottom: 2px solid #3498db;
     padding-bottom: 15px;
@@ -29,14 +26,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     i {
       margin-right: 15px;
       color: #3498db;
       font-size: 1.8rem;
     }
   }
-  
+
   .no-projects {
     text-align: center;
     color: #6c757d;
@@ -45,7 +42,7 @@
     background: #f8f9fa;
     border-radius: 10px;
     font-size: 1.2rem;
-    
+
     i {
       color: #adb5bd;
       font-size: 2.5rem;
@@ -53,7 +50,7 @@
   }
 }
 
-/* 项目卡片样式 - 最终优化版 */
+/* 项目卡片样式 */
 .project-card {
   display: flex;
   background: white;
@@ -62,25 +59,22 @@
   overflow: hidden;
   margin-bottom: 3rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-  /* 居中显示并响应式变化 */
+
   max-width: 1500px;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  
+
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   }
-  
+
   .project-content {
     flex: 0 0 75%;
     padding: 35px;
-    
-    /* 内容装饰线 */
     position: relative;
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -91,46 +85,52 @@
       background: linear-gradient(to bottom, #3498db, #2c3e50);
       border-radius: 2px;
     }
-    
+
     .project-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
     }
-    
+
     .project-title {
       margin-top: 0;
       margin-bottom: 0;
       font-size: 1.8rem;
       display: flex;
       align-items: center;
-      
+      word-break: break-word;
+
       a {
         color: #2c3e50;
         text-decoration: none;
         transition: color 0.3s ease;
         margin-right: 20px;
-        
+
         &:hover {
           color: #3498db;
           text-decoration: underline;
         }
       }
     }
-    
+
+    .project-title.ongoing-title a { color: #2995fa !important; }
+    .project-title.past-title a { color: #212A32 !important; }
+
     .project-summary {
       color: #495057;
       line-height: 1.08;
       margin-bottom: 30px;
       font-size: 1.08rem;
+      text-align: justify;
+      text-justify: inter-ideograph;
     }
-    
+
     .project-meta {
       color: #6c757d;
       margin-bottom: 30px;
       font-size: 1.08rem;
-      
+
       .duration {
         display: inline-flex;
         align-items: center;
@@ -138,7 +138,7 @@
         padding: 8px 18px;
         border-radius: 25px;
         font-size: 1.08rem;
-        
+
         i {
           margin-right: 10px;
           color: #3498db;
@@ -146,7 +146,43 @@
         }
       }
     }
-    
+
+    .project-meta-line {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin-bottom: 1.2em;
+      margin-top: 0.3em;
+    }
+
+    .project-date {
+      background: #eef2f6;
+      color: #264057;
+      padding: 0.45em 1.2em 0.45em 1.1em;
+      border-radius: 22px;
+      font-size: 1.07em;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+    .status-badge {
+      padding: 0.35em 1.2em 0.35em 1.2em;
+      border-radius: 20px;
+      font-size: 1.02em;
+      font-weight: 600;
+      display: inline-block;
+      margin-left: 0.25em;
+      vertical-align: middle;
+    }
+    .status-badge.ongoing {
+      background: #2995fa;
+      color: #fff;
+    }
+    .status-badge.past {
+      background: #e7e7e7;
+      color: #464646;
+    }
+
     .project-link {
       display: inline-flex;
       align-items: center;
@@ -156,16 +192,13 @@
       font-weight: 600;
       font-size: 1.08rem;
       transition: all 0.3s ease;
-      
+
       &:hover {
         color: #1a6fb0;
         text-decoration: underline;
-        
-        i {
-          transform: translateX(5px);
-        }
+        i { transform: translateX(5px); }
       }
-      
+
       i {
         margin-left: 10px;
         font-size: 1.08rem;
@@ -173,279 +206,71 @@
       }
     }
   }
-  
+
   .project-image {
     flex: 0 0 25%;
     position: relative;
     overflow: hidden;
     min-height: 350px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5em 0 0; /* 右侧增加 2.5em 空白，可以按需调整 */
+    padding: 0;
+    margin: 0;
+
     img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-    
-    &:hover img {
-      transform: scale(1.1);
-    }
-    
-    /* 图片加载失败样式 */
-    &.image-error {
-      img {
-        display: none;
-      }
-      
-      .image-error-placeholder {
-        display: flex;
-      }
-    }
-    
-    .image-error-placeholder {
-      display: none;
-      width: 100%;
-      height: 100%;
-      background: #f0f8ff;
-      border: 2px dashed #3498db;
-      min-height: 350px;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      
-      .error-content {
-        text-align: center;
-        max-width: 400px;
-        
-        i {
-          font-size: 2rem;
-          color: #3498db;
-          margin-bottom: 15px;
-        }
-        
-        .error-text {
-          color: #2c3e50;
-          
-          strong {
-            font-size: 1.3rem;
-            display: block;
-            margin-bottom: 12px;
-          }
-          
-          p {
-            margin: 8px 0;
-            font-size: 1rem;
-          }
-          
-          .solution-tip {
-            color: #e74c3c;
-            font-weight: bold;
-            margin: 15px 0;
-            font-size: 1.1rem;
-          }
-        }
-        
-        .windows-tips {
-          background: #e3f2fd;
-          border-radius: 8px;
-          padding: 15px;
-          margin-top: 15px;
-          text-align: left;
-          
-          ul {
-            padding-left: 20px;
-            margin: 10px 0;
-            
-            li {
-              margin-bottom: 10px;
-              line-height: 1.5;
-            }
-          }
-        }
-      }
+      max-width: 340px;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px #ccc;
+      object-fit: contain;
+      margin: 0 auto;
     }
   }
-  
-  /* 响应式调整 */
-  @media (max-width: 1600px) {
-    width: 90%;
-    max-width: 1400px;
-    
-    .project-content {
-      padding: 30px;
-      
-      .project-title {
-        font-size: 1.8rem;
-      }
-    }
-  }
-  
-  @media (max-width: 1400px) {
-    width: 92%;
-    max-width: 1300px;
-    
-    .project-content {
-      padding: 28px;
-      
-      .project-title {
-        font-size: 1.7rem;
-      }
-      
-      .project-summary {
-        font-size: 1.1rem;
-      }
-    }
-  }
-  
-  @media (max-width: 1200px) {
-    width: 94%;
-    max-width: 1100px;
-    
-    .project-content {
-      padding: 25px;
-      
-      .project-title {
-        font-size: 1.6rem;
-      }
-      
-      .project-summary {
-        font-size: 1.05rem;
-      }
-    }
-    
-    .project-image {
-      min-height: 320px;
-    }
-  }
-  
-  @media (max-width: 992px) {
+}
+
+/* ========== 移动端响应式 ========== */
+@media (max-width: 800px) {
+  .project-card {
     flex-direction: column;
-    width: 96%;
-    max-width: 900px;
-    
-    .project-content {
-      flex: 1 1 100%;
-      padding: 30px;
-      
-      .project-title {
-        font-size: 1.6rem;
-      }
-      
-      /* 移动端移除装饰线 */
-      &::before {
-        display: none;
-      }
-    }
-    
-    .project-image {
-      flex: 0 0 auto;
-      height: 350px;
-      order: -1;
-      min-height: unset;
-      
-      .image-error-placeholder {
-        min-height: 250px;
-        
-        .error-content i {
-          font-size: 2.5rem;
-        }
-        
-        .windows-tips {
-          padding: 10px;
-        }
-      }
-    }
+    width: 100%;
+    padding: 1em 0.2em;
+    margin-bottom: 2rem;
+    max-width: 99vw;
   }
   
-  @media (max-width: 768px) {
-    width: 98%;
-    max-width: 700px;
-    margin-bottom: 2.5rem;
-    
-    .project-content {
-      padding: 25px;
-      
-      .project-title {
-        font-size: 1.5rem;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-    
-    .project-image {
-      height: 300px;
-    }
+
+  .project-content {
+    padding: 1em 0.5em 0.6em 0.5em !important;
   }
-  
-  @media (max-width: 576px) {
-    border-radius: 12px;
-    
-    .project-content {
-      padding: 20px;
-      
-      .project-title {
-        font-size: 1.4rem;
-      }
-      
-      .project-summary {
-        font-size: 1rem;
-      }
-    }
-    
-    .project-image {
-      height: 250px;
-    }
+  .project-title {
+    font-size: 1.18rem !important;
+    margin: 0.2em 0 0.7em 0;
+    word-break: break-all;
+  }
+  .project-image {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    margin-bottom: 0.5em;
+    min-height: unset !important;
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+  .project-image img {
+    max-width: 90vw !important;
+    width: 100% !important;
+    max-height: 40vw;
+    height: auto !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    display: block !important;
   }
 }
-
-/* 确保父容器不限制宽度 */
-.projects-section, 
-.projects-container, 
-.project-list {
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* 移除错误的媒体查询部分 */
-/* 删除所有包含错误值（如1400px、76800px等）的媒体查询 */
-
-/* 动画效果 */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.project-card {
-  animation: fadeInUp 0.6s ease forwards;
-  opacity: 0;
-  
-  &:nth-child(1) { animation-delay: 0.1s; }
-  &:nth-child(2) { animation-delay: 0.2s; }
-  &:nth-child(3) { animation-delay: 0.3s; }
-  &:nth-child(4) { animation-delay: 0.4s; }
-  &:nth-child(5) { animation-delay: 0.5s; }
-}
-
-/* 实用类 */
-.mr-1 { margin-right: 0.25rem; }
-.mr-2 { margin-right: 0.5rem; }
-.ml-1 { margin-left: 0.25rem; }
-.mt-4 { margin-top: 1.5rem; }
-.mt-5 { margin-top: 3rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-3 { margin-bottom: 1rem; }
-.mb-4 { margin-bottom: 1.5rem; }
-.mb-5 { margin-bottom: 3rem; }
-.py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
-.text-center { text-align: center; }
-
 
 /* 统一所有一级标题（H1） */
 h1, .hero-title, .section-title, .collection-title {
@@ -454,7 +279,6 @@ h1, .hero-title, .section-title, .collection-title {
   line-height: 1.2;
   margin-bottom: 1.2rem;
 }
-
 /* 统一所有二级标题（H2） */
 h2, .collection-block h2 {
   font-size: 1.5rem;
@@ -463,7 +287,6 @@ h2, .collection-block h2 {
   margin-top: 2rem;
   margin-bottom: 0.7rem;
 }
-
 /* 统一所有三级标题（H3） */
 h3, .collection-block h3 {
   font-size: 1.2rem;
@@ -477,7 +300,9 @@ body, p, ul, ol, li, table, td, th, blockquote, .collection-block, .section-text
   font-size: 1.08rem;
   line-height: 1.7;
   font-weight: 400;
-  color: #222; /* 可按实际主题调整 */
+  color: #222;
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 
 /* 让图片、表格等居中显示 */
@@ -495,15 +320,36 @@ blockquote {
   color: #666;
 }
 
-/* 如果有 .collection-block 特殊class，可自定义 */
-.collection-block {
-  font-size: 1.08rem;
-  line-height: 1.7;
-  color: #222;
-}
+/* 实用类 */
+.mr-1 { margin-right: 0.25rem; }
+.mr-2 { margin-right: 0.5rem; }
+.ml-1 { margin-left: 0.25rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+.py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.text-center { text-align: center; }
 
-/* 全站正文内容两端对齐 */
-body, p, .section-text, .markdown, .content, .main-content, .project-summary {
-  text-align: justify;
-  text-justify: inter-ideograph;  /* 对中英文都适配，适合学术类 */
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.project-card {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  &:nth-child(4) { animation-delay: 0.4s; }
+  &:nth-child(5) { animation-delay: 0.5s; }
 }

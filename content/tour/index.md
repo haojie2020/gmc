@@ -81,4 +81,15 @@ sections:
         {{< project_list >}}
     design:
       css_class: 'projects-section'
+
+      # **脚注图片 block**（推荐插入到最后）
+  - block: markdown
+    content:
+      title: ""
+      subtitle: ""
+      text: |
+       <div style="width:100%;text-align:center;">
+        <img src="/media/funding.jpg" alt="Funding" style="display:inline-block;max-width:1000px;width:80vw;min-width:120px;height:auto;margin:0 auto;border:none;box-shadow:none;background:transparent;" />
+       </div>
+
 ---

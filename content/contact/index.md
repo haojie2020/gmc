@@ -46,23 +46,16 @@ sections:
     design:
       columns: '1'
 
+
+
+      # **脚注图片 block**（推荐插入到最后）
   - block: markdown
     content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: contact.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: contain
-          text_color_light: true
-      spacing:
-        padding: ['0', '0', '0', '0']
-      css_class: fullscreen
+      title: ""
+      subtitle: ""
+      text: |
+       <div style="width:100%;text-align:center;">
+        <img src="/media/funding.jpg" alt="Funding" style="display:inline-block;max-width:1000px;width:80vw;min-width:120px;height:auto;margin:0 auto;border:none;box-shadow:none;background:transparent;" />
+       </div>
+
 ---
