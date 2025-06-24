@@ -107,5 +107,28 @@ links:
 - name: URL
   url: https://www.sciencedirect.com/science/article/pii/S0926337325006137
 ---
+Ruthenium dioxide (RuO₂) is a leading catalyst for the acidic oxygen evolution reaction (OER), yet its performance is limited by high overpotential and long-term stability issues. This study introduces a simple “coordination engineering” strategy to fine-tune the local Ru–O environment and thus regulate Ru’s spin states, achieving substantial improvements in OER activity and durability.
 
+Key Strategies
+
+Vacancy Creation (RuO₂–V): Controlled reduction–oxidation cycles generate oxygen vacancies, decreasing the Ru–O coordination number from 6 to ≈5.5.
+
+Heteroatom Doping (RuO₂–M): Incorporation of trace Mn or Fe slightly increases coordination to ≈6.3.
+
+Major Findings
+
+Enhanced Spin-PolarizationVacancy and doping treatments boost the unpaired electron count at Ru sites, shown by ESR and magnetometry: magnetic moments rise from ~0.15 μ_B (pristine) to 0.50 μ_B.
+
+Lower Overpotentials
+
+RuO₂–V: 250 mV at 10 mA cm⁻² (−60 mV vs. pristine)
+
+RuO₂–Mn: 235 mV (best performance)
+
+Improved Kinetics and StabilityTafel slopes drop from 85 mV dec⁻¹ to 55–60 mV dec⁻¹, and 10 h stability tests retain >95% current.
 <img src="featured1.jpg" width="500" alt="OER activity on coordinated RuO2 with flow cell">
+
+Theoretical InsightsDFT calculations reveal that optimized spin splitting lowers the free energy for the *OOH intermediate (1.25 eV → 0.95 eV), cutting theoretical overpotential to ≈0.1 V. Enhanced overlap of Ru 4d↑ and O 2p↓ orbitals promotes spin-selective electron transfer.
+
+Implications
+This work pioneers using spin-polarization as a design parameter in OER catalysis. By establishing a clear link between coordination number, magnetic moment, and catalytic performance, it offers a transferable guideline for other metal oxides (IrO₂, Co₃O₄, etc.). Future directions include in situ spin-state tracking (XMCD) and validation in full PEM electrolyzers.
