@@ -1,0 +1,16 @@
+{{ with .Params.experience }}
+  <section class="profile-experience">
+    <h2>Work Experience</h2>
+    <ul>
+      {{ range . }}
+        <li class="experience-item">
+          <h3>{{ .position }}, <a href="{{ .url }}">{{ .company }}</a></h3>
+          <time>{{ .start }} — {{ .end }}</time>
+          <p>{{ .description }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
+
+<pre>{{ printf "%#v" .Params.experience }}</pre>
