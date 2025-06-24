@@ -6,30 +6,30 @@ type: landing
 
 sections:
 
-  - block: hero
-    content:
-      title: |
-        Green Molecules Conversion Group (GMC)
-      text: |   
-        <br>
+ # - block: hero
+ #   content:
+  #    title: |
+ #       Green Molecules Conversion Group (GMC)
+ #     text: |   
+  #      <br>
         
-        Our group is dedicated to advancing electrocatalysis and energy conversion by leveraging external field effects-such as electric and magnetic fields-to boost electrochemical reactions. We focus on developing efficient solutions for green hydrogen production and CO₂ reduction, aiming to contribute to carbon neutrality through innovative field-enhanced catalytic strategies.
+  #      Our group is dedicated to advancing electrocatalysis and energy conversion by leveraging external field effects-such as electric and magnetic fields-to boost electrochemical reactions. We focus on developing efficient solutions for green hydrogen production and CO₂ reduction, aiming to contribute to carbon neutrality through innovative field-enhanced catalytic strategies.
 
-      image:
-        filename: welcome.jpg
+  #    image:
+  #      filename: welcome.jpg
         
-  - block: markdown
-    content:
-      title: |
-       Research Topic
-      subtitle: ""
-      text: |
+ # - block: markdown
+  #  content:
+ #     title: |
+ #      Research Topic
+ #     subtitle: ""
+ #     text: |
       
-       Our research advances carbon neutrality by developing renewable energy-driven photo/electrocatalytic systems that efficiently produce green hydrogen and convert greenhouse gases into valuable chemicals. By engineering field-responsive catalysts and leveraging operando techniques with multiscale simulations, we reveal how external fields optimize catalytic performance at the atomic level. Our work bridges fundamental science and industrial application, accelerating the scale-up of electrolyzers to deliver sustainable, high-rate green hydrogen production.
+ #      Our research advances carbon neutrality by developing renewable energy-driven photo/electrocatalytic systems that efficiently produce green hydrogen and convert greenhouse gases into valuable chemicals. By engineering field-responsive catalysts and leveraging operando techniques with multiscale simulations, we reveal how external fields optimize catalytic performance at the atomic level. Our work bridges fundamental science and industrial application, accelerating the scale-up of electrolyzers to deliver sustainable, high-rate green hydrogen production.
 
-       <div style="text-align:center;">
-        <img src="/media/spin-catalysis.jpg" alt="Spin Catalysis" style="max-width:600000px;width:100%;border-radius:12px;box-shadow:0 2px 8px #aaa;" />
-       </div>
+  #     <div style="text-align:center;">
+  #      <img src="/media/spin-catalysis.jpg" alt="Spin Catalysis" style="max-width:600000px;width:100%;border-radius:12px;box-shadow:0 2px 8px #aaa;" />
+   #    </div>
   
   #- block: collection
   #  content:
