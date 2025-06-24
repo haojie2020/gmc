@@ -12,11 +12,11 @@ title: Hiwi Student Assistant Positions Available
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: '2025-06-01T13:00:00Z'
-date_end: '2025-06-01T15:00:00Z'
+# date_end: '2025-06-01T15:00:00Z'
 all_day: false
 
 #authors: [John]
-tags: [talk]
+tags: [HiWi, open position]
 
 # Is this a featured talk? (true/false)
 #featured: true
@@ -30,7 +30,7 @@ tags: [talk]
 #  country: United States
 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image credit: [**GMC**](https://haojiegroup.com)'
   focal_point: Right
 
 summary: We are looking for HiWi students.

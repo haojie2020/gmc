@@ -1,0 +1,21 @@
+<div class="scroll-wrapper">
+  <div class="scroll-content" id="scrollContent">
+    {{ range $key, $item := .Site.Data.scroll }}
+      <div class="scroll-item">
+        <img src="{{ $item.img }}" alt="{{ $item.title }}">
+        <div class="overlay">
+          <h4>{{ $item.title }}</h4>
+          <p>{{ $item.desc }}</p>
+          <a class="btn" href="{{ $item.link }}">了解更多 →</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const c = document.getElementById('scrollContent');
+    c.innerHTML += c.innerHTML; // 克隆一次，实现无缝循环
+  });
+</script>
