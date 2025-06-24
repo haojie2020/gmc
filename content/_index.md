@@ -6,10 +6,70 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: markdown
+  - block: slider
     content:
-      text: |
-        {{< scroll >}}
+      slides:
+      - title: 👋 Welcome to **GMC**
+        content: Advancing Carbon Neutrality and Green Hydrogen via Field-Enhanced Electrolysis.
+        align: center
+        background:
+          image:
+            filename: groupimage.jpg
+            filters:
+              brightness: 0.8
+          position: right
+          size: contain
+          color: '#666'
+        link:
+          icon: 
+          icon_pack: fas
+          text: Check our research...
+          url: ../tour/
+
+      - title: New publication
+        content: 'Coordination Engineering Modulates Spin-Polarization in Ruthenium Oxide to Enhance Acidic Oxygen Evolution Reaction'
+        align: left
+        background:
+          image:
+            filename: tan.jpg
+            filters:
+              brightness: 0.8
+          position: center
+          size: contain
+          color: '#555'
+        link:
+          icon: enjoy
+          icon_pack: fas
+          text: latest News
+          url: ../post/
+
+      - title:  Field-enhanced (photo)electrocatalysis Lab
+        content: ''
+        align: right
+        background:
+          image:
+            filename: welcome.jpg
+            filters:
+              brightness: 0.8
+          position: center
+          size: contain
+          color: '#333'
+        link:
+          icon: graduation-cap
+          icon_pack: fas
+          text: Join Us
+          url: ../contact/
+
+    design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      #slide_height: ''
+      slide_height: '80vh'
+      is_fullscreen: false
+      #is_fullscreen: true
+      # Automatically transition through slides?
+      loop: true
+      # Duration of transition between slides (in ms)
+      interval: 5000
 
   - block: hero
     content:
@@ -21,7 +81,7 @@ sections:
         Our group is dedicated to advancing electrocatalysis and energy conversion by leveraging external field effects-such as electric and magnetic fields-to boost electrochemical reactions. We focus on developing efficient solutions for green hydrogen production and CO₂ reduction, aiming to contribute to carbon neutrality through innovative field-enhanced catalytic strategies.
 
       image:
-         filename: groupimage.jpg
+         filename: H2.jpg
          
 
  # - block: markdown
