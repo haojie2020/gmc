@@ -26,12 +26,12 @@ sections:
           text: Check our research...
           url: ../tour/
 
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
+      - title: NEW PUBLICATION
+        content: 'Coordination Engineering Modulates Spin-Polarization in Ruthenium Oxide to Enhance Acidic Oxygen Evolution Reaction'
         align: left
         background:
           image:
-            filename: contact.jpg
+            filename: tan.jpg
             filters:
               brightness: 0.8
           position: center
@@ -52,7 +52,7 @@ sections:
             filters:
               brightness: 0.8
           position: center
-          size: contain
+          size: view
           color: '#333'
         link:
           icon: graduation-cap
@@ -61,7 +61,7 @@ sections:
           url: ../contact/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: ''
+      slide_height: '800px'
       is_fullscreen: ture
       # Automatically transition through slides?
       loop: true
