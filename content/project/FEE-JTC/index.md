@@ -21,7 +21,7 @@ images:
     
 
 ---
-***Check us at JTC.* ([**GMC@JTC**](https://jtc.haojiegroup.com)**)
+***Check us at JTC.* ([GMC@JTC](https://jtc.haojiegroup.com))**
 
 
 Our research addresses climate change mitigation and reducing fossil fuel-related health risks through renewable energy-driven photo/electrocatalysis. These systems enable dual-purpose conversion: producing green hydrogen while transforming greenhouse gases into valuable chemicals. Although externally applied fields (magnetic, electric, strain) enhance catalytic efficiency via charge transfer optimization and adsorption energy tuning, the atomic-scale mechanisms governing field-coupled reactions remain unclear.
