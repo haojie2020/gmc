@@ -43,12 +43,13 @@ sections:
           text: latest News
           url: ../post/
 
-      - title:  Field-enhanced (photo)electrocatalysis Lab
-        content: ''
+      - title:  " "
+        content: "                                          "                                             
         align: right
         background:
           image:
-            filename: welcome.jpg
+            #filename: welcome.jpg
+            filename: jtc-b3.jpg
             filters:
               brightness: 0.8
           position: center
@@ -57,8 +58,10 @@ sections:
         link:
           icon: graduation-cap
           icon_pack: fas
-          text: Join Us
-          url: ../contact/
+          #text: Join Us
+          text: JTC
+          #url: ../contact/
+          url: ../project/fee-jtc/
 
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')

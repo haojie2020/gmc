@@ -6,6 +6,10 @@
 title: Haojiegroup # Website name
 baseURL: 'https://haojiegroup.com/' # Website URL
 # baseURL: 'https://haojie2020.github.io/gmc/'
+logo:
+  path: images/logo.jpg
+  width: 40   # 可选
+  height: 40  # 可选
 
 
 ############################
