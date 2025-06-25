@@ -10,7 +10,7 @@ sections:
       title: Contact
       text: |-
         Please contact us through the below form.
-      email: haojie.zhang@physik.uni-halle.de
+      email: gmc@haojiegroup.com
       phone: +49 345 5528 561
       address:
         street: Karl-Freiherr-von-Fritsch-Straße 3

@@ -22,10 +22,13 @@ organizations:
     url: 'https://jtc.uni-halle.de/'
   - name: Max-Planck-Institute for Microstructure physic
     url: https://www.mpi-halle.mpg.de/NISE/members/109486
-  - name: Centre for Innovation Competence SiLi-nano® - MLU
+  - name: Centre for Innovation Competence SiLi-nano®-MLU
     url: 
   - name: Institue of Chemistry - MLU
     url: 
+  - name: Office| E0.70, Karl-Freiherr-von-Fritsch-Straße 3, 06120 Halle (Saale), Germany
+    value: 
+   
 
 # Office location
   - office: E0.70, Karl-Freiherr-von-Fritsch-Straße 3, 06120 Halle (Saale), Germany
