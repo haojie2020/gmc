@@ -14,7 +14,7 @@ authors:
 superuser: ture
 
 # Role/position
-role: Postdoctoral Researcher
+role: Researcher
 
 # Organizations/Affiliations
 organizations:
