@@ -26,7 +26,7 @@ sections:
       subtitle: ""
       text: |
       
-       Our research advances carbon neutrality by developing renewable energy-driven photo/electrocatalytic systems that efficiently produce green hydrogen and convert greenhouse gases into valuable chemicals. By engineering field-responsive catalysts and leveraging operando techniques with multiscale simulations, we reveal how external fields optimize catalytic performance at the atomic level. Our work bridges fundamental science and industrial application, accelerating the scale-up of electrolyzers to deliver sustainable, high-rate green hydrogen production.
+       Our research advances carbon neutrality by developing renewable energy-driven photo/electrocatalytic systems that efficiently produce green hydrogen and convert greenhouse gases into valuable chemicals. By engineering field-responsive catalysts and leveraging operando techniques with multiscale simulations, we reveal how external fields optimize catalytic performance at the atomic level. Our work bridges fundamental science and industrial application, accelerating the scale-up of electrolyzers to deliver sustainable and efficient green molecules conversions.
 
        <div style="text-align:center;">
         <img src="/media/spin-catalysis.jpg" alt="Spin Catalysis" style="max-width:600000px;width:100%;border-radius:12px;box-shadow:0 2px 8px #aaa;" />
