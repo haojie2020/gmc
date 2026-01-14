@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Jannik Ledig
+title: Xinyu Qiao
 
 # Full name (for SEO)
-first_name: Jannik
-last_name: Ledig
+first_name: Xinyu
+last_name: Qiao
 
 # Username (this should match the folder name)
 authors:
-  - Jannik
+  - Xinyu
 
 # Is this the primary user of the site?
 superuser: ture
 
 # Role/position
-role: Hiwi
+role: Master student
 
 # Organizations/Affiliations
 organizations:
@@ -24,14 +24,14 @@ organizations:
     url: 
 
 # Office location
-  - office: Room 2.05, Weinbergweg 23, 06120 Halle (Saale), Germany
+  - office: 
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
-# interests:
- #  - Artificial Intelligence
- #  -
+interests:
+  - Magnetic enhanced synthesis
+  - Field enhanced electrochemistry
 
 # education:
  #  courses:
@@ -49,10 +49,10 @@ organizations:
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-# social:
-#   - icon: envelope
-#     icon_pack: fas
-#     link: 'mailto:haojie'
+social:
+   - icon: envelope
+     icon_pack: fas
+     link: 'mailto:xinyu.qiao@student.uni-halle.de'
 #   - icon: twitter
 #     icon_pack: fab
 #     link: https://twitter.c
@@ -74,8 +74,7 @@ organizations:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Alumni
+  - Researcgers
   
 ---
 
-Jannik Ledig.....

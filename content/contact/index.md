@@ -10,7 +10,7 @@ sections:
       title: Contact
       text: |-
         Please contact us through the below form.
-      email: gmc@haojiegroup.com
+      email: haojie.zhang@chemie.uni-halle.de
       phone: +49 345 5528 561
       address:
         street: Karl-Freiherr-von-Fritsch-Straße 3
@@ -22,10 +22,10 @@ sections:
       coordinates:
         latitude: '51.495208143602206'
         longitude: '11.93487928391829'
-      directions: Enter the bulding and go to Office E0.70 at ghe ground floow.
+  
       office_hours:
         - 'Monday-Friday: 9:00 to 18:00'
-      appointment_url: 'https://calendar.notion.so/meet/haojie-c0pl1gce/bm1d14o5u'
+      # appointment_url: 'https://calendar.notion.so/meet/haojie-c0pl1gce/bm1d14o5u'
       #contact_links:
       #  - icon: comments
       #    icon_pack: fas

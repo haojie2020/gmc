@@ -24,27 +24,28 @@ organizations:
     url: 
 
 # Office location
-  - office: Room 2.05, Weinbergweg 23, 06120 Halle (Saale), Germany
+ # - office: Room 2.05, Weinbergweg 23, 06120 Halle (Saale), Germany
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+#bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Triboelectric-nanogenerator (TENG)
+  - Electrochemistry
+  - Photoelectrochemistry
+  - Metal recycling
 
-education:
-  courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+#education:
+ # courses:
+ #   - course: PhD in Artificial Intelligence
+ #     institution: Stanford University
+ #     year: 2012
+ #   - course: MEng in Artificial Intelligence
+ #     institution: Massachusetts Institute of Technology
+ #     year: 2009
+ #   - course: BSc in Artificial Intelligence
+ #     institution: Massachusetts Institute of Technology
+ #     year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -53,16 +54,16 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:haojie'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.c
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scho
-  - icon: orcid
-    icon_pack: ai
-    link: https://o
+    link: 'mailto:jianuxn.shi@student.uni-halle.de'
+ # - icon: twitter
+ #   icon_pack: fab
+ #   link: https://twitter.c
+#  - icon: google-scholar
+ #   icon_pack: ai
+ #   link: https://scho
+ # - icon: orcid
+ #   icon_pack: ai
+ #   link: https://o
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
