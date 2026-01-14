@@ -1,7 +1,7 @@
 ---
-title: RPLD
+title: RPFM/KPFM
 category: Film growth #Characterization, Preparation, PEC/EC
-summary: Functional oxide film growth
+summary: Probe test of materials' ferroelectric and piezoelectric properties. 
 image:
   filename: raman.jpg
   #focal_point: Center
